@@ -65,8 +65,10 @@ label {
 
 input {
   font: inherit;
-  padding: 1em;
   color: inherit;
+  padding: 1em;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 10rem;
 }
 
 ::placeholder {
