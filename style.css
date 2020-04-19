@@ -19,7 +19,20 @@ body {
   grid-template-columns: auto;
 }
 
-@media screen and (min-width: 875px) {
+@media screen and (min-width: 1050px) {
+  .grid-container {
+    grid-template-columns: 1fr auto;
+  }
+
+  #hero {
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+
+  #hero img {
+    height: 100vh;
+    width: auto;
+  }
 }
 
 #logo {
