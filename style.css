@@ -30,7 +30,8 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 h1 {
@@ -50,6 +51,7 @@ h1 > span {
 
 p {
   text-align: center;
+  line-height: 1.5em;
 }
 
 .attribution {
