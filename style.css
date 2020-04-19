@@ -63,6 +63,16 @@ label {
   display: none;
 }
 
+input {
+  font: inherit;
+  padding: 1em;
+  color: inherit;
+}
+
+::placeholder {
+  color: inherit;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
