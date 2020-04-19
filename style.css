@@ -1,5 +1,11 @@
+:root {
+  --dark-greyish-red: hsl(0, 6%, 24%);
+  --desaturated-red: hsl(0, 36%, 70%);
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
+  color: var(--desaturated-red);
   background-image: linear-gradient(
     135deg,
     hsl(0, 0%, 100%),
@@ -25,6 +31,20 @@ main {
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 0.275em;
+  color: var(--dark-greyish-red);
+}
+
+h1 > span {
+  font-weight: 300;
+  color: var(--desaturated-red);
 }
 
 .attribution {
