@@ -11,16 +11,24 @@ The designs were created to the following widths:
 
 ### Primary
 
+main text
+
 - Desaturated Red: hsl(0, 36%, 70%)
+  error highlight
 - Soft Red: hsl(0, 93%, 68%)
 
 ### Neutral
+
+title text
 
 - Dark Grayish Red: hsl(0, 6%, 24%)
 
 ### Gradients
 
+background
+
 - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+  button
 - Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
 
 ## Typography
