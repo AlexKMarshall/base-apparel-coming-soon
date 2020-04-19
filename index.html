@@ -20,37 +20,41 @@
     <a id="logo" href="#" rel="home"
       ><img src="images/logo.svg" alt="Base Apparel logo"
     /></a>
-    <div id="hero">
-      <picture>
-        <source media="(min-width: 800px)" srcset="images/hero-desktop.jpg" />
-        <source srcset="images/hero-mobile.jpg" />
-        <img
-          src="images/hero-desktop.jpg"
-          alt="Woman with brown hair in orange shirt"
-        />
-      </picture>
+
+    <div class="grid-container">
+      <div id="hero">
+        <picture>
+          <source media="(min-width: 800px)" srcset="images/hero-desktop.jpg" />
+          <source srcset="images/hero-mobile.jpg" />
+          <img
+            src="images/hero-desktop.jpg"
+            alt="Woman with brown hair in orange shirt"
+          />
+        </picture>
+      </div>
+      <main>
+        <h1><span>We're</span> coming soon</h1>
+
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form id="sign-up">
+          <label for="email">Email Address </label>
+          <input
+            placeholder="Email Address"
+            name="email"
+            id="email"
+            aria-label="Email Address"
+          />
+          <button aria-label="submit">
+            <img src="images/icon-arrow.svg" alt="submit button" />
+          </button>
+        </form>
+      </main>
     </div>
-
-    <h1><span>We're</span> coming soon</h1>
-
-    <p>
-      Hello fellow shoppers! We're currently building our new fashion store. Add
-      your email below to stay up-to-date with announcements and our launch
-      deals.
-    </p>
-
-    <form id="sign-up">
-      <label for="email">Email Address </label>
-      <input
-        placeholder="Email Address"
-        name="email"
-        id="email"
-        aria-label="Email Address"
-      />
-      <button aria-label="submit">
-        <img src="images/icon-arrow.svg" alt="submit button" />
-      </button>
-    </form>
 
     <footer>
       <p class="attribution">

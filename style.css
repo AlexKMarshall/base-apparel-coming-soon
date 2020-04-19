@@ -11,6 +11,12 @@ body {
   margin: 30px;
 }
 
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
