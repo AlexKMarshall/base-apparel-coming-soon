@@ -106,6 +106,10 @@ form {
 
 .error-icon {
   color: var(--soft-red);
+  position: absolute;
+  top: 0.5em /*vertically align in the center*/;
+  bottom: 0;
+  right: 70px; /*width of the button plus breathing space*/
 }
 
 .form-field > button {
