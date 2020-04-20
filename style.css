@@ -104,6 +104,10 @@ form {
   padding: 1em;
 }
 
+.error-icon {
+  color: var(--soft-red);
+}
+
 .form-field > button {
   width: 60px;
   border: none;
