@@ -100,6 +100,10 @@ form {
   color: inherit;
 }
 
+.validation-error {
+  padding: 1em;
+}
+
 .form-field > button {
   width: 60px;
   border: none;
