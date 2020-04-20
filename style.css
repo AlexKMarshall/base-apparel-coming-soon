@@ -18,31 +18,16 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
-}
-
-@media screen and (min-width: 1050px) {
-  :root {
-    --text-align: left;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr auto;
-  }
-
-  #hero {
-    grid-column: 2;
-    grid-row: 1 / 4;
-  }
-
-  #hero img {
-    height: 100vh;
-    width: auto;
-  }
+  align-items: center;
+  margin: 30px;
 }
 
 #logo {
-  display: block;
-  margin: 30px;
+  /* display: block; */
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 #hero {
@@ -56,8 +41,8 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -128,4 +113,25 @@ form {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1050px) {
+  :root {
+    --text-align: left;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr auto;
+  }
+
+  #hero {
+    grid-column: 2;
+    grid-row: 1 / 4;
+    overflow: hidden;
+  }
+
+  #hero img {
+    height: 100vh;
+    width: auto;
+  }
 }
