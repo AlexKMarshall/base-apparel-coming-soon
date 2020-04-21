@@ -4,6 +4,7 @@
   --soft-red: hsl(0, 93%, 68%);
   --text-align: center;
   --input-height: 3.5rem;
+  --button-width: 60px;
 }
 
 body {
@@ -109,13 +110,15 @@ input:invalid {
 .error-icon {
   color: var(--soft-red);
   position: absolute;
-  top: 0.5em /*vertically align in the center*/;
+  top: 0.5em /*vertically align in the center TODO do this properly*/;
   bottom: 0;
-  right: 70px; /*width of the button plus breathing space*/
+  right: calc(
+    var(--button-width) + 10px
+  ); /*width of the button plus breathing space*/
 }
 
 button {
-  width: 60px;
+  width: var(--button-width);
   height: var(--input-height);
   border: none;
   border-radius: 10rem;
@@ -164,6 +167,7 @@ button:focus::before {
 @media screen and (min-width: 1050px) {
   :root {
     --text-align: left;
+    --button-width: 100px;
   }
 
   .grid-container {
