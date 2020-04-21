@@ -66,8 +66,15 @@
               aria-label="Email Address"
               required
             />
-            <!-- <i class="material-icons error-icon">error</i> -->
-            <button aria-label="submit">
+            <div class="error-message default-hidden" id="error-for-email">
+              Please provide a valid email
+            </div>
+            <i
+              class="material-icons error-icon default-hidden"
+              id="icon-for-email"
+              >error</i
+            >
+            <button id="submit" aria-label="submit">
               <img src="images/icon-arrow.svg" alt="submit button" />
             </button>
           </div>

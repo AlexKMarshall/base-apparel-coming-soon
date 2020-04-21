@@ -130,6 +130,11 @@ input.error::after {
   ); /*width of the button plus breathing space*/
 }
 
+.default-hidden {
+  display: none;
+  visibility: hidden;
+}
+
 button {
   width: var(--button-width);
   height: var(--input-height);
