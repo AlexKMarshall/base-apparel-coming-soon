@@ -30,6 +30,22 @@ const showError = (field, error) => {
   message.style.visibility = "visible";
 };
 
+const removeError = (field) => {
+  field.classList.remove("error");
+
+  field.removeAttribute("aria-describedby");
+
+  const id = field.id || field.name;
+  if (!id) return;
+
+  const message = field.form.querySelector(`.error-message#error-for-${id}`);
+  if (!message) return;
+
+  message.innerHTML = "";
+  message.style.display = "none";
+  message.style.visibility = "hidden";
+};
+
 document.addEventListener(
   "blur",
   (event) => {
@@ -37,7 +53,10 @@ document.addEventListener(
 
     if (error) {
       showError(event.target, error);
+      return;
     }
+
+    removeError(event.target);
   },
   true
 );

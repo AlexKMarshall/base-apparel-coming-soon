@@ -95,8 +95,21 @@ input {
   border-radius: 10rem;
 }
 
-input:invalid {
+input.error {
   border: 2px solid var(--soft-red);
+}
+
+input.error::after {
+  font-family: "Material Icons";
+  content: "error";
+  color: var(--soft-red);
+  position: absolute;
+  top: 0.5em /*vertically align in the center TODO do this properly*/;
+  bottom: 0;
+  right: calc(
+    var(--button-width) + 10px
+  ); /*width of the button plus breathing space*/
+  z-index: 1;
 }
 
 ::placeholder {
