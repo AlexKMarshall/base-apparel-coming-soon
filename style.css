@@ -21,6 +21,12 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "header"
+    "hero"
+    "content"
+    "footer";
   align-items: center;
   margin: 30px;
 }
@@ -30,15 +36,18 @@ body {
   max-width: 450px;
   margin: 0 auto;
   margin-bottom: 30px;
+  grid-area: header;
 }
 
 #hero {
   display: flex;
   flex-direction: column;
   align-items: center;
+  grid-area: hero;
 }
 
 main {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -178,6 +187,10 @@ button:focus::before {
   display: none;
 }
 
+footer {
+  grid-area: footer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -198,20 +211,19 @@ button:focus::before {
 
   .grid-container {
     grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+      "header hero"
+      "content hero"
+      "footer hero";
     margin: 0;
-    /* margin-left: 30px; */
   }
 
   #logo {
     margin-bottom: 0;
-    grid-column: 1;
-    grid-row: 1;
   }
 
   #hero {
     height: 100vh;
-    grid-column: 2;
-    grid-row: 1 / 4;
   }
 
   #hero picture {
@@ -226,13 +238,13 @@ button:focus::before {
   }
 
   main {
-    grid-column: 1;
-    grid-row: 2;
+    /* grid-column: 1;
+    grid-row: 2; */
   }
 
   footer {
-    grid-column: 1;
-    grid-row: 3;
+    /* grid-column: 1;
+    grid-row: 3; */
   }
 
   .background-pattern {
