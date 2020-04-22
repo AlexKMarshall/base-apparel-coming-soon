@@ -188,6 +188,11 @@ button:focus::before {
     --button-width: 100px;
   }
 
+  body {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
+  }
+
   .grid-container {
     grid-template-columns: 3fr 2fr;
     margin: 0;
